@@ -12,3 +12,10 @@ terraform {
     }  
   }   
 }
+# 1. VPC Definition
+resource "aws_vpc" "vpn" {
+  cidr_block = "100.78.33.0/24"
+  tags = {
+    Name = "Group-Cloud-VPC"
+  }
+}
