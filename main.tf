@@ -29,10 +29,3 @@ resource "aws_vpc" "vpn" {
     Name = "Group-Cloud-VPC"
   }
 }
-resource "aws_vpc" "vpn2" {
-  cidr_block = "100.78.32.0/24"
-  tags = {
-    Name = "Group-Cloud-VPC2"
-  }
-}
-#this test trun
